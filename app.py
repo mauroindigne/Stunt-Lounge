@@ -11,9 +11,8 @@ app.config["MONGO_URI"] = 'mongodb+srv://Kincomoro5:Kincomoro5@cluster0-eyd41.mo
 mongo = PyMongo(app)
 
 
-@app.route('/')
-def hello():
-    return 'Hello World ...again'
+@app.route('/base.html')
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
