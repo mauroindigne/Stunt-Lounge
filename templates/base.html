@@ -6,16 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+       <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 	<title>Document</title>
 </head>
 
 <body>
-    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"></a>
-            <img src="../assets/images/sl-logo.png" width="65" height="60" class="d-inline-block align-top" alt="" href="{{url_for('home')}}">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img href="{{url_for('home')}}" src="../static/images/sl-logo.png" width="65" height="60" class="d-inline-block align-top" alt="">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,7 +36,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Add Video</a>
+                        <a class="nav-link" href="{{url_for('add_video')}}" tabindex="-1">Add Video</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -42,7 +45,6 @@
                 </form>
             </div>
         </nav>
-    </header>
     <div class="container">
     {% block content %} {% endblock %}
     </div>

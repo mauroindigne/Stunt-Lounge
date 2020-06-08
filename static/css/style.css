@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
+
+body {
+  background: url("../images/background.jpg") no-repeat bottom right fixed;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100%;
+  margin-top: 0;
+  font-family:"Oswald", sans-serif;
+}
+
+.video-block {
+  position: relative;
+}
+
+.logo {
+  background: url(".../images/sl-logo.png");
+}
+
+.youtube-url {
+    color: red;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.addvideo {
+    padding: 5%;
+    margin-top: 10%;
+    background-color: rgba(66, 66, 66, 0.96);
+    border-radius: 20px;
+    color: red;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
