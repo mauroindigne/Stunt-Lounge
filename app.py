@@ -15,18 +15,19 @@ mongo = PyMongo(app)
 def home():
     return render_template("base.html")
 
+
 @app.route('/add_video')
 def add_video():
-    return render_template('addvideo.html',
-                           video=mongo.db.video.find())
+    return render_template('addvideo.html', 
+        video=mongo.db.video.find(),
+        brands=mongo.db.brand_names.find())
 
 
-@app.route('/insert_video')
+@app.route('/insert_video', methods=['POST'])
 def insert_video():
-    video = mongo.db.video
-    video.insert_one(request.form.to_dict())
-    return redirect(url_for('home'))
-
+    video = mongo.db.videos
+    tasks.insert_one(request.form.to_dict())
+    return redirect(url_for('get_tasks'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

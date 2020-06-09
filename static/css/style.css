@@ -11,17 +11,12 @@ body {
 
 .video-block {
   position: relative;
+  background-color: red;
+  margin: 0 auto;
 }
 
 .logo {
   background: url(".../images/sl-logo.png");
-}
-
-.youtube-url {
-    color: red;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .addvideo {
@@ -29,8 +24,25 @@ body {
     margin-top: 10%;
     background-color: rgba(66, 66, 66, 0.96);
     border-radius: 20px;
-    color: red;
+    color: #DC3545;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 500;
+}
+
+.addvideo-header {
+    padding-bottom: 5%;
+    color: white;
+}
+
+.brand-name {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.brand-name:hover {
+    color: red;
+    transition: ease-in-out;
 }
