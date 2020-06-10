@@ -32,7 +32,19 @@ def add_video():
 @app.route('/edit_video/<video_id>')
 def edit_video(video_id):
     the_video = mongo.db.video.find_one({"_id": ObjectId(video_id)})
-    return render_template('editvideo.html', video=the_video)
+    return render_template('editvideo.html', video=the_video, brands=mongo.db.brand_names.find())
+
+# update video
+@app.route('/update_video/<video_id>', methods=["POST"])
+def update_video(video_id):
+    videos=mongo.db.video
+    videos.update({"_id": ObjectId(video_id)},
+    {
+        'video_title': request.form.get('video_title'),
+        'video_url': request.form.get('video_url'),
+        'brand': request.form.get('brand')
+    })
+    return redirect(url_for('home'))
 
 # delete video
 @app.route('/delete_video/<video_id>')
