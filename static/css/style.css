@@ -46,3 +46,10 @@ body {
     color: red;
     transition: ease-in-out;
 }
+
+.brand_title {
+    text-align: center;
+    font-family: "Oswald" , sans-serif;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
