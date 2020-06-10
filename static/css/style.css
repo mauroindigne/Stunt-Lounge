@@ -66,9 +66,9 @@ body {
 }
 
 .addvideo {
-    padding: 5%;
+    padding: 3%;
     margin-top: 10%;
-    background-color: rgba(66, 66, 66, 0.96);
+    background-color: rgba(48, 48, 48, 0.96);
     border-radius: 20px;
     color: #DC3545;
     font-family: "Oswald", sans-serif;
@@ -100,3 +100,6 @@ body {
     text-transform: uppercase;
 }
 
+.container {
+    padding-top: 5%;
+}

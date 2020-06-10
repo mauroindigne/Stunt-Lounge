@@ -16,11 +16,29 @@ def home():
     return render_template("videos.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
-
+# search for kawasaki
 @app.route('/kawasaki')
 def kawasaki():
     return render_template("kawasaki.html",
-    videos=mongo.db.video.find()) 
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+
+# search for yamaha
+@app.route('/yamaha')
+def yamaha():
+    return render_template("yamaha.html",
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+
+# search for honda
+@app.route('/honda')
+def honda():
+    return render_template("honda.html",
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+
+# search for ktm
+@app.route('/ktm')
+def ktm():
+    return render_template("ktm.html",
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
 
 # To add video
 @app.route('/add_video')
