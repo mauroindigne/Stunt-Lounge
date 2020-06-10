@@ -18,7 +18,8 @@ body {
   float:left;
   height: 33%;
   border-radius: 10px;
-  color: red;
+  color: white;
+  text-transform: capitalize;
 }
 
 .video-content {
@@ -112,5 +113,19 @@ body {
 }
 
 .container {
-    padding-top: 5%;
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 0 auto;
+}
+
+.catagory-title {
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    font-weight: 800;
+    background-color:  rgba(48, 48, 48, 0.96); 
+     border-radius: 20px;
+    margin: 2;
+    padding: 2%;
 }
