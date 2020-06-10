@@ -10,13 +10,15 @@ body {
 }
 
 .video-block {
-  background-color: red;
+  background-color: rgba(48, 48, 48, 0.96);
   padding: 1%;
-  margin: 4%;
-  width: 45%;
-  margin: 2.5%;
+  width: 30%;
+  margin: 1.5%;
   position:relative;
   float:left;
+  height: 33%;
+  border-radius: 10px;
+  color: red;
 }
 
 .video-content {
@@ -31,6 +33,8 @@ body {
 }
 .title {
     display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .edit_icon {
@@ -39,6 +43,10 @@ body {
 }
 .video {
     width:100%;
+}
+
+.video_brand {
+    color: white;
 }
 
 .logo {
@@ -79,3 +87,4 @@ body {
     font-size: 5vw;
     text-transform: uppercase;
 }
+
