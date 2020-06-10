@@ -28,6 +28,12 @@ def add_video():
     return render_template('addvideo.html', 
         brands=mongo.db.brand_names.find())
 
+# edit video info
+@app.route('/edit_video/<video_id>')
+def edit_video(video_id):
+    the_video = mongo.db.video.find_one({"_id": ObjectId(video_id)})
+    return render_template('editvideo.html', video=the_video)
+
 # delete video
 @app.route('/delete_video/<video_id>')
 def delete_video(video_id):
