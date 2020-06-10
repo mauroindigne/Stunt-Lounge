@@ -28,6 +28,12 @@ def add_video():
     return render_template('addvideo.html', 
         brands=mongo.db.brand_names.find())
 
+# delete video
+@app.route('/delete_video/<video_id>')
+def delete_video(video_id):
+    videos=mongo.db.video.remove({'_id': ObjectId(video_id)})
+    return redirect(url_for('home'))
+
 # to insert video onto page
 @app.route('/insert_video', methods=['POST'])
 def insert_video():

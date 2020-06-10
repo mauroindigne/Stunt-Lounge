@@ -8,7 +8,8 @@
                 {{ video.video_title }}
             </div>
             <div class="edit_icon">
-                <i class="material-icons">edit</i>
+                <a href="" class="material-icons">edit</a>
+                <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
             </div>
         </div>
             <iframe class="video" src="{{video.video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

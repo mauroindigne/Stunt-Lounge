@@ -35,11 +35,23 @@ body {
     display: inline-block;
     font-size: 20px;
     font-weight: 500;
+    padding-top: 2%;
+    padding-bottom: 4%
 }
 
 .edit_icon {
         display: inline-block;
         float: right;
+        text-decoration: none;
+        padding-top: 2%;
+        padding-bottom: 4%
+}
+
+.material-icons {
+    color: red;
+}
+.material-icons:hover {
+    color:red;
 }
 .video {
     width:100%;
