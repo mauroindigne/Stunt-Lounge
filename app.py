@@ -9,19 +9,26 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kinco
 
 mongo = PyMongo(app)
 
-
+#render home screen
 @app.route('/')
 @app.route('/home')
 def home():
     return render_template("videos.html",
-    videos=mongo.db.video.find())
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
+@app.route('/kawasaki')
+def kawasaki():
+    return render_template("kawasaki.html",
+    videos=mongo.db.video.find()) 
+
+# To add video
 @app.route('/add_video')
 def add_video():
     return render_template('addvideo.html', 
         brands=mongo.db.brand_names.find())
 
+# to insert video onto page
 @app.route('/insert_video', methods=['POST'])
 def insert_video():
     videos = mongo.db.video
