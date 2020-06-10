@@ -82,14 +82,25 @@ body {
 }
 
 .brand-name {
-    color: black;
+    color: red;
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#navbarDropdown {
+    color: red;
+    border: none;
+}
+
+.dropdown-item {
+    color: red;
+    border: none;
 }
 
 .brand-name:hover {
-    color: red;
+    color: black;
     transition: ease-in-out;
 }
 
