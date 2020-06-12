@@ -9,6 +9,36 @@ body {
   font-family:"Oswald", sans-serif;
 }
 
+/*----------------------------Navbar----------------- */
+
+
+.brand-name {
+    color: red;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.brand-name:hover {
+    color: black;
+    transition: ease-in-out;
+}
+
+#navbarDropdown {
+    color: red;
+    border: none;
+}
+
+.dropdown-item {
+    color: red;
+    border: none;
+}
+
+/*----------------------------Video Container----------------- */
+
+
 .video-block {
   background-color: rgba(48, 48, 48, 0.96);
   padding: 1%;
@@ -30,8 +60,6 @@ body {
 
 }
 
-.video-header{
-}
 .title {
     display: inline-block;
     font-size: 20px;
@@ -62,6 +90,7 @@ body {
     color: white;
 }
 
+/*----------------------------Add video block----------------- */
 
 .addvideo {
     padding: 3%;
@@ -78,43 +107,15 @@ body {
     padding-bottom: 5%;
     color: white;
 }
-
-.brand-name {
-    color: red;
-    font-family: "Oswald", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-#navbarDropdown {
-    color: red;
-    border: none;
-}
-
-.dropdown-item {
-    color: red;
-    border: none;
-}
-
-.brand-name:hover {
-    color: black;
-    transition: ease-in-out;
-}
-
-.brand_title {
-    text-align: center;
-    font-family: "Oswald" , sans-serif;
-    font-size: 5vw;
-    text-transform: uppercase;
-}
-
+/*----------------------------Container----------------- */
 .container {
     padding-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     margin: 0 auto;
 }
+
+/*----------------------------Search by Brand page header----------------- */
 
 .catagory-title {
     text-align: center;
@@ -126,6 +127,9 @@ body {
     margin: 2;
     padding: 2%;
 }
+
+/*----------------------------Ipad/horizontal mobile screen----------------- */
+
 
 @media screen and (max-width: 1200px) {
 
@@ -142,6 +146,9 @@ body {
   text-transform: capitalize;
     }
 }
+
+/*----------------------------Mobile screen----------------- */
+
 
 @media screen and (max-width: 750px) {
      .video-block {
@@ -160,6 +167,8 @@ body {
         font-size: 29px;
     }
 }
+
+/*----------------------------Iphone 5/SE screen----------------- */
 
 
 @media screen and (max-width: 320px) {

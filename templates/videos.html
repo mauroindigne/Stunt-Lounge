@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
-
+<!-- Area for all videos to be placed, to manage location quickly for mobile devices -->
 <div class="video-content">
+<!-- Loops and displays each video added to database in its own video block -->
 {% for video in videos %}
     <div class="video-block">
         <div class="video-header">
@@ -16,7 +17,6 @@
         <div class="video_brand">
             {{ video.brand }}
         </div>
-        
     </div>
 {% endfor %}
 </div>
