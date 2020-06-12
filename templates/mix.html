@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+    <h1 class="catagory-title">Mix of Brands</h1>
+</div>
+<div class="video-content">
+{% for video in videos %}
+    {% if video.brand == "Mix of Brands" %}
+    <div class="video-block">
+        <div class="video-header">
+            <div class="title">
+                {{ video.video_title }}
+            </div>
+            <div class="edit_icon">
+                <a href="{{url_for('edit_video', video_id=video._id)}}" class="material-icons">edit</a>
+                <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
+            </div>
+        </div>
+            <iframe class="video" src="{{video.video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_brand">
+            {{ video.brand }}
+        </div>
+        
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endblock %}

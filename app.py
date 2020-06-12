@@ -16,6 +16,7 @@ def home():
     return render_template("videos.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
+
 # search for kawasaki
 @app.route('/kawasaki')
 def kawasaki():
@@ -39,6 +40,14 @@ def honda():
 def ktm():
     return render_template("ktm.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+    
+
+# Search for Mix of Brands
+@app.route('/mix')
+def mix():
+    return render_template("mix.html",
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
 
 # To add video
 @app.route('/add_video')
