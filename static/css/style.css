@@ -9,6 +9,26 @@ body {
   font-family:"Oswald", sans-serif;
 }
 
+.jumbotron {
+    background-color: #a2a2a2f0;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.welcome-to {
+
+}
+
+.about-logo {
+    width: 75%;
+    padding:2%;
+}
+
+p {
+
+}
+
 /*----------------------------Navbar----------------- */
 
 
@@ -34,6 +54,10 @@ body {
 .dropdown-item {
     color: red;
     border: none;
+}
+
+.nav-link {
+    color: red;
 }
 
 /*----------------------------Video Container----------------- */

@@ -48,6 +48,11 @@ def mix():
     return render_template("mix.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
+@app.route('/about')
+def about():
+    return render_template("about.html",
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
 
 # To add video
 @app.route('/add_video')
