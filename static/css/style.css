@@ -62,9 +62,6 @@ body {
     color: white;
 }
 
-.logo {
-  background: url(".../images/sl-logo.png");
-}
 
 .addvideo {
     padding: 3%;
@@ -158,5 +155,16 @@ body {
   border-radius: 10px;
   color: white;
   text-transform: capitalize;
+    }
+    .brand-name {
+        font-size: 29px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .brand-name {
+        font-size: 25px;
     }
 }
