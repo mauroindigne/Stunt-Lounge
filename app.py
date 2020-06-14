@@ -52,9 +52,9 @@ def ktm():
 
 
 # Search for Others
-@app.route('/others')
-def others():
-    return render_template("others.html",
+@app.route('/mix')
+def mix():
+    return render_template("mix.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
