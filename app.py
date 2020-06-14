@@ -39,14 +39,15 @@ def honda():
 @app.route('/ktm')
 def ktm():
     return render_template("ktm.html",
-    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
-    
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
 
 # Search for Mix of Brands
 @app.route('/mix')
 def mix():
     return render_template("mix.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
 
 @app.route('/about')
 def about():
@@ -60,11 +61,21 @@ def add_video():
     return render_template('addvideo.html', 
         brands=mongo.db.brand_names.find())
 
+
+# to insert video onto page
+@app.route('/insert_video', methods=['POST'])
+def insert_video():
+    videos = mongo.db.video
+    videos.insert_one(request.form.to_dict())
+    return redirect(url_for('home'))
+
+
 # edit video info
 @app.route('/edit_video/<video_id>')
 def edit_video(video_id):
     the_video = mongo.db.video.find_one({"_id": ObjectId(video_id)})
     return render_template('editvideo.html', video=the_video, brands=mongo.db.brand_names.find())
+
 
 # update video
 @app.route('/update_video/<video_id>', methods=["POST"])
@@ -78,18 +89,13 @@ def update_video(video_id):
     })
     return redirect(url_for('home'))
 
+
 # delete video
 @app.route('/delete_video/<video_id>')
 def delete_video(video_id):
     videos=mongo.db.video.remove({'_id': ObjectId(video_id)})
     return redirect(url_for('home'))
 
-# to insert video onto page
-@app.route('/insert_video', methods=['POST'])
-def insert_video():
-    videos = mongo.db.video
-    videos.insert_one(request.form.to_dict())
-    return redirect(url_for('home'))
 
 
 if __name__ == '__main__':
