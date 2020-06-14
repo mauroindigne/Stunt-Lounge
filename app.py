@@ -17,10 +17,10 @@ def home():
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
+# Redirect for 404 issue
 @app.errorhandler(404)
 def not_found(e):
     return render_template("404.html")
-
 
 
 # search for kawasaki
@@ -29,17 +29,20 @@ def kawasaki():
     return render_template("kawasaki.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
 
+
 # search for yamaha
 @app.route('/yamaha')
 def yamaha():
     return render_template("yamaha.html",
-    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+    videos=mongo.db.video.find()) 
+
 
 # search for honda
 @app.route('/honda')
 def honda():
     return render_template("honda.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+
 
 # search for ktm
 @app.route('/ktm')
@@ -48,13 +51,14 @@ def ktm():
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
-# Search for Mix of Brands
-@app.route('/mix')
-def mix():
-    return render_template("mix.html",
+# Search for Others
+@app.route('/others')
+def others():
+    return render_template("others.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
+# Go to about page
 @app.route('/about')
 def about():
     return render_template("about.html",
@@ -65,7 +69,7 @@ def about():
 @app.route('/add_video')
 def add_video():
     return render_template('addvideo.html', 
-        brands=mongo.db.brand_names.find())
+        brands=mongo.db.brand_names.find(), models=mongo.db.models.find())
 
 
 # to insert video onto page
@@ -101,8 +105,6 @@ def update_video(video_id):
 def delete_video(video_id):
     videos=mongo.db.video.remove({'_id': ObjectId(video_id)})
     return redirect(url_for('home'))
-
-
 
 
 if __name__ == '__main__':

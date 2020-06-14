@@ -7,6 +7,7 @@ body {
   background-size: 100%;
   margin-top: 0;
   font-family:"Oswald", sans-serif;
+  background-color: #F9F9F9;
 }
 
 .jumbotron {
@@ -19,8 +20,7 @@ body {
 
 
 .about-logo {
-    width: 75%;
-    padding:2%;
+    color: red;
 }
 
 .error404 {
