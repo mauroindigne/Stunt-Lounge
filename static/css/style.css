@@ -137,6 +137,10 @@ body {
     padding-bottom: 5%;
     color: white;
 }
+
+.form-group {
+    text-align: center;
+}
 /*----------------------------Container----------------- */
 .container {
     padding-top: 2%;
@@ -201,6 +205,10 @@ body {
     }
     .video-content {
     padding-left: 5%;
+    }
+
+    .form-group {
+    text-align: left;
 }
 }
 

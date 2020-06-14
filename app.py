@@ -69,7 +69,7 @@ def about():
 @app.route('/add_video')
 def add_video():
     return render_template('addvideo.html', 
-        brands=mongo.db.brand_names.find(), models=mongo.db.models.find())
+        brands=mongo.db.brand_names.find())
 
 
 # to insert video onto page
@@ -95,7 +95,8 @@ def update_video(video_id):
     {
         'video_title': request.form.get('video_title'),
         'video_url': request.form.get('video_url'),
-        'brand': request.form.get('brand')
+        'brand': request.form.get('brand'),
+        'model': request.form.get('model')
     })
     return redirect(url_for('home'))
 
