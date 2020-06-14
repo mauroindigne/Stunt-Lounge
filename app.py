@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, abort
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -15,6 +15,12 @@ mongo = PyMongo(app)
 def home():
     return render_template("videos.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
+
 
 
 # search for kawasaki
@@ -95,6 +101,7 @@ def update_video(video_id):
 def delete_video(video_id):
     videos=mongo.db.video.remove({'_id': ObjectId(video_id)})
     return redirect(url_for('home'))
+
 
 
 
