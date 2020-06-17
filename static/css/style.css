@@ -63,8 +63,12 @@ body {
     color: red;
 }
 
-/*----------------------------Video Container----------------- */
+.dropdown-menu {
+    border: none;
+    background-color: #F9F9F9;
+}
 
+/*----------------------------Video Container----------------- */
 
 .video-block {
   background-color: rgba(48, 48, 48, 0.96);
@@ -85,12 +89,13 @@ body {
     overflow:hidden;
     display:inline-block;
     align-items: center;
+    margin-top: 8%;
 
 }
 
 .title {
     display: inline-block;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     padding-top: 2%;
     padding-bottom: 4%;
@@ -157,6 +162,7 @@ body {
      border-radius: 20px;
     margin: 0 auto;
     padding: 2%;
+    margin-top: 8%;
 }
 
 /*----------------------------Ipad/horizontal mobile screen----------------- */
@@ -175,6 +181,13 @@ body {
   border-radius: 10px;
   color: white;
   text-transform: capitalize;
+    }
+    .catagory-title {
+        margin-top: 15%;
+    }
+    .video-content {
+    padding-left: 5%;
+    margin-top: 15%;
     }
 }
 
@@ -202,11 +215,14 @@ body {
     }
     .video-content {
     padding-left: 5%;
+    margin-top: 20%;
     }
 
     .form-group {
     text-align: left;
 }
+.catagory-title {
+        margin-top: 20%;
 }
 
 /*----------------------------Iphone 5/SE screen----------------- */

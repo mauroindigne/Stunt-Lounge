@@ -13,8 +13,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template("videos.html",
-    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+    return render_template("videos.html", videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
 # Redirect for 404 issue
@@ -34,14 +33,14 @@ def kawasaki():
 @app.route('/yamaha')
 def yamaha():
     return render_template("yamaha.html",
-    videos=mongo.db.video.find()) 
+    videos=mongo.db.video.find())
 
 
 # search for honda
 @app.route('/honda')
 def honda():
     return render_template("honda.html",
-    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find()) 
+    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
 # search for ktm

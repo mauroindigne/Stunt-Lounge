@@ -54,7 +54,7 @@ area, the specific data that was clicked is pulled from the database and put on 
 
 - Delete - The user can also delete information from the database by clicking on the trashcan icon next to each induvidual box.
 
-
+- Error 404 page - I created a custom error 404 page by importing flasks "abort" file. This allowed the page to be redirected to a 404 page that also has a button to redirect the user back to the home page. The reason i wanted a custom "error 404" page is because it looks much more offical and adds that extra layer to really complete a website.  
 ### Features Left to Implement
 
 - 
