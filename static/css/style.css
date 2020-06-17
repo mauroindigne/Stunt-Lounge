@@ -13,7 +13,7 @@ body {
 .jumbotron {
     background-color: #a2a2a2f0;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20%;
     border-radius: 10px;
 }
 
@@ -223,6 +223,11 @@ body {
 }
 .catagory-title {
         margin-top: 20%;
+}
+
+.jumbotron {
+    margin-top: 28%;
+
 }
 
 /*----------------------------Iphone 5/SE screen----------------- */
