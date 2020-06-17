@@ -233,4 +233,8 @@ body {
     .brand-name {
         font-size: 25px;
     }
+     .video-content {
+    padding-left: 5%;
+    margin-top: 25%;
+    }
 }

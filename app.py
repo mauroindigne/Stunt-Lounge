@@ -107,7 +107,6 @@ def delete_video(video_id):
     return redirect(url_for('home'))
 
 
-if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-        port=int(os.environ.get('PORT')),
-        debug=True)
+if __name__ == '__main__':  
+    app.run(host=os.getenv("IP", "0.0.0.0"),
+    port=int(os.getenv("PORT", "5000")), debug=True)
