@@ -25,8 +25,9 @@ body {
 
 .error404 {
     align-content: center;
-    margin-top: 9%;
+    margin: 25% 5% 0% 5%;
     padding: 5%;
+    font-size: 50px;
     border-radius: 10px;
     text-align: center;
     background-color: #a2a2a2f0;
@@ -95,7 +96,7 @@ body {
 
 .title {
     display: inline-block;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     padding-top: 2%;
     padding-bottom: 4%;
@@ -103,11 +104,11 @@ body {
 }
 
 .edit_icon {
-        display: inline-block;
         float: right;
         text-decoration: none;
         padding-top: 2%;
-        padding-bottom: 4%
+        padding-bottom: 4%;
+        font-size: 10px;
 }
 
 .material-icons {
@@ -162,10 +163,9 @@ body {
      border-radius: 20px;
     margin: 0 auto;
     padding: 2%;
-    margin-top: 8%;
 }
 
-/*----------------------------Ipad/horizontal mobile screen----------------- */
+/*----------------------------Ipad ----------------- */
 
 
 @media screen and (max-width: 1200px) {
@@ -182,14 +182,60 @@ body {
   color: white;
   text-transform: capitalize;
     }
-    .catagory-title {
-        margin-top: 15%;
-    }
     .video-content {
-    padding-left: 5%;
     margin-top: 15%;
     }
+    .addvideo {
+    margin-top: 17%;
+    }
+
+    .error404 {
+        margin: 25% 5% 0% 5%;
+    }
+
 }
+
+/*----------------------------/horizontal mobile screen----------------- */
+
+
+@media screen and (max-width: 900px) {
+     .video-block {
+  background-color: rgba(48, 48, 48, 0.96);
+  padding: 1%;
+  width: 46%;
+  margin: 1.5%;
+  position:relative;
+  float:left;
+  height: 33%;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+    }
+    .brand-name {
+        font-size: 29px;
+    }
+
+    .error404 {
+        margin: 25% 5% 0% 5%;
+    }
+
+    .video-content {
+    margin-top: 15%;
+    }
+
+    .form-group {
+    text-align: left;
+}
+
+.jumbotron {
+    margin-top: 28%;
+
+}
+
+.addvideo {
+    margin-top: 15%;
+}
+
 
 /*----------------------------Mobile screen----------------- */
 
@@ -210,24 +256,35 @@ body {
     .brand-name {
         font-size: 29px;
     }
+
     .error404 {
-        margin: 5%;
+        margin: 25% 5% 0% 5%;
+        font-size: 30px;
     }
+
     .video-content {
-    padding-left: 5%;
     margin-top: 20%;
     }
 
     .form-group {
     text-align: left;
 }
-.catagory-title {
-        margin-top: 20%;
-}
 
 .jumbotron {
     margin-top: 28%;
 
+}
+
+.addvideo {
+    margin-top: 25%;
+}
+
+.catagory-title {
+    font-size: 60px
+}
+
+.video-block {
+    margin-left: 4.5%;
 }
 
 /*----------------------------Iphone 5/SE screen----------------- */
@@ -239,7 +296,14 @@ body {
         font-size: 25px;
     }
      .video-content {
-    padding-left: 5%;
     margin-top: 25%;
     }
+    .addvideo {
+    margin-top: 29%;
+    }
+    
+    .title {
+    font-size: 16px;
+    
+}
 }
