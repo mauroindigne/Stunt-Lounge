@@ -10,24 +10,22 @@ Stunt lounge is a free to use database of stunt videos that uses the CRUD functi
 My main goal was to create a simple website for stunt riders or bikers to view and add youtube videos that they enjoy and want to share with the world, while having a clean minimalistic modern design that was easy for users to navigate. With this in mind I started with a simple clean navbar. This included a logo with the website's name that could be clicked to send the user back to the home page. Next came the layout of the videos, I added a fair amount of breathing space to the sides of the home page for the desktop view (limiting the videos to 3 columns) slowly switching to 2 for smaller devices and then finally 1 column for mobile devices. This keeps the website clean and from reshaping the look of the website. Next I added the ability to search for videos by the brand of the bike. This will categories the videos by the brand of motor bike that users have selected while adding videos to the page. 
 
 
-As a user, i want to save stunt videos , so i can view them easily.
+- As a user, i want to save stunt videos , so i can view them easily.
 
-As a user, I want to be able to sort videos by the brand of the bike, so that I can find videos for a specific brand of motorbike.
+- As a user, I want to be able to sort videos by the brand of the bike, so that I can find videos for a specific brand of motorbike.
 
-As a user, i want to be able to delete videos, so that there are not videos that shouldnt be included.
+- As a user, i want to be able to delete videos, so that there are not videos that shouldnt be included.
 
-As a user, I want to be able to update and edit video information, so that everything can stay upto date.
+- As a user, I want to be able to update and edit video information, so that everything can stay upto date.
 
-As a user, I want to have a clean, easy to use navbar, so that going from page to page doesn't include clicking back on the browser. 
+- As a user, I want to have a clean, easy to use navbar, so that going from page to page doesn't include clicking back on the browser. 
 
-As a user, I want to have a simple to play video format so i don't have to open a new tab to view videos.
+- As a user, I want to have a simple to play video format so i don't have to open a new tab to view videos.
+
 
 The wireframes are found inside the wireframe directory, here you will find my mockup designs that i created on google slides, for the home, about and “search by brand” pages.
 
-
 ## Features
-
-
  
 ### Existing Features
 
@@ -48,6 +46,9 @@ area, the specific data that was clicked is pulled from the database and put on 
 - Catagorising videos - The user has the ability to view videos by the brand of the motorbike by clicking on the "search by brand" button on the navbar. What this does is grab all the videos that have the value of that brand in the Brand seatction on MongoDB and load those into a template for that brand.
 
 - Error 404 page - I created a custom error 404 page by importing flasks "abort" file. This allowed the page to be redirected to a 404 page that also has a button to redirect the user back to the home page. The reason i wanted a custom "error 404" page is because it looks much more offical and adds that extra layer to really complete a website.  
+
+- Custom Tab Icon - I created and added a tab icon to the page, while it is a samll touch it creates a more complete website.
+
 ### Features Left to Implement
 
 - Auto Url - I really wanted the user to be able paste any URL from youtube into the form and for the code to change this into a /embedded/ link every time. This is because currently the user has to manually add the last 11 characters from the url to allow the website to work. In the future I will study RegEx more to get an understanding to be able to implement this feature so that it can read the url and replace whatever url comes before those 11 characters with the embedded form. This will smooth out the UX and lead to an overall higher quality website.
