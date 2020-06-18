@@ -10,7 +10,6 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kinco
 mongo = PyMongo(app)
 
 #render home screen
-@app.route('/')
 @app.route('/home')
 def home():
     return render_template("videos.html", videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
@@ -59,6 +58,7 @@ def mix():
 
 # Go to about page
 @app.route('/about')
+@app.route('/')
 def about():
     return render_template("about.html",
     videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())

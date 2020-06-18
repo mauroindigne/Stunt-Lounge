@@ -1,9 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="jumbotron">
-    <h3 class="welcome-to">Welcome To Stunt </h3>
-    <h1 class="about-logo">Stunt Lounge</h1>
+    <h3 class="about-logo">Welcome To Stunt Lounge </h3>
     <h5>Stunt Lounge is a free to use database of stunt videos that can be categorized by Brand name. You can add your videos from youtube to this database by clicking the “Add Video” button then adding part of your URL from youtube and giving it a title and selecting which motorbike is featured in this video. Help fellow riders find videos to grow this database</h5>
+    <video class="video" controls>
+        <source src="../static/videos/Stunt-Lounge-tutorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
 {% endblock %}
