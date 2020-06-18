@@ -1,41 +1,66 @@
 {% extends 'base.html' %} {% block content %}
+
+<!-- Inserts EditVideo Route (some same class as AddVideo Due to simlare forms)-->
+
 <div class="addvideo">
+
+      <!-- Edit Video Text-->
+
     <h2 class="addvideo-header">Edit Video</h2>
+
+    <!-- Form For (Edit-Video) -->
+
     <form action="{{url_for('update_video', video_id=video._id)}}" method="POST">
+        
+        <!-- From Entry (Title)-->
+        
         <div class="form-group row">
             <label for="title" class="col-sm-2 col-form-label">Title</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="video_title" name="video_title" maxlength="25" value="{{video.video_title}}"required>
+                <input type="text" class="form-control" id="video_title" name="video_title" maxlength="25" value="{{video.video_title}}" required>
             </div>
         </div>
+
+        <!-- Form Entry (URL) -->
+
         <div class="form-group row">
             <label for="youtube-url" class="col-sm-2 col-form-label youtube-url">Youtube URL</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" id="video_url" name="video_url" value="{{video.video_url}}" required>
             </div>
         </div>
+
+        <!-- Form Pick (Brand) -->
+
         <div class="form-group row">
             <label for="inputState" class="col-sm-2 col-form-label">Motorbike Brand</label>
             <div class="col-sm-10">
-            <select id="brand" name="brand" class="form-control" required>
-                <option selected>{{video.brand}}</option>
-                {% for brand in brands %}
-                <option value="{{brand.brand}}">{{brand.brand}}</option>
-                {% endfor %}
-            </select>
+                <select id="brand" name="brand" class="form-control" required>
+                    <option selected>{{video.brand}}</option>
+                    {% for brand in brands %}
+                    <option value="{{brand.brand}}">{{brand.brand}}</option>
+                    {% endfor %}
+                </select>
             </div>
         </div>
+
+        <!-- Form Entry (Bike Model) -->
+
         <div class="form-group row">
             <label for="youtube-url" class="col-sm-2 col-form-label youtube-url">Motorbike Model</label>
             <div class="col-sm-10">
-            <input type="text" class="form-control" id="model" name="model" maxlength="30" value="{{video.model}}" required>
+                <input type="text" class="form-control" id="model" name="model" maxlength="30" value="{{video.model}}" required>
             </div>
         </div>
+
+        <!-- Submit (Add Video) Button -->
+
         <div class="form-group row">
             <div class="col-sm-10">
             <button type="submit" class="btn btn-outline-danger">Update Video</button>
             </div>
         </div>
+
     </form>
 </div>
 

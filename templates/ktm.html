@@ -1,27 +1,48 @@
 {% extends 'base.html' %} {% block content %}
+
+<!-- Search By KTM Brand -->
+
 <div class="video-content">
     <div>
         <h1 class="catagory-title">KTM</h1>
     </div>
-{% for video in videos %}
-    {% if video.brand == "KTM" %}
-    <div class="video-block">
-        <div class="video-header">
-            <div class="title">
-                {{ video.video_title }}
+
+    <!-- All Videos Load Here -->
+
+    {% for video in videos %}
+        {% if video.brand == "KTM" %}
+
+        <!-- Video Block -->
+
+        <div class="video-block">
+            <div class="video-header">
+
+                <div class="title">
+                    {{ video.video_title }}
+                </div>
+
+                <!-- Icon For Edit/Delete -->
+
+                <div class="edit_icon">
+                    <a href="{{url_for('edit_video', video_id=video._id)}}" class="material-icons">edit</a>
+                    <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
+                </div>
+
             </div>
-            <div class="edit_icon">
-                <a href="{{url_for('edit_video', video_id=video._id)}}" class="material-icons">edit</a>
-                <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
-            </div>
-        </div>
+            
+            <!-- Enbeded Youtube Video -->
+
             <iframe class="video" src="https://www.youtube.com/embed/{{video.video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video_brand">
-            {{ video.model }}
+            
+            <!-- Video Model Info-->
+            
+            <div class="video_brand">
+                {{ video.model }}
+            </div>
+            
         </div>
-        
-    </div>
-    {% endif %}
-{% endfor %}
+        {% endif %}
+    {% endfor %}
 </div>
+
 {% endblock %}

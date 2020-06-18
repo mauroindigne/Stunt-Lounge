@@ -9,18 +9,37 @@
 	<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/jpg" href="../static/images/favicon.ico"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 	<title>Stunt Lounge</title>
 </head>
 
 <body>
+
+    <!-- NavBar -->
+
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        
+        <!-- Website Logo -->
+
         <img src="../static/images/sl-logo.png" width="65" height="60" class="d-inline-block align-top" alt="">
+
+        <!-- Website Title -->
+
         <a class="brand-name" href="{{url_for('home')}}">Stunt Lounge</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            
+        <!-- NavBar Button Mobile -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar -->
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+                
+                <!-- Search By Brand Button-->
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,20 +52,40 @@
                         <a class="dropdown-item" href="{{url_for('yamaha')}}">Yamaha</a>
                         <a class="dropdown-item" href="{{url_for('mix')}}">Mix of Bikes</a>
                     </div>
+                </li>
+
+                <!-- About Button -->
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('about')}}" >About</a>
-                </li>    
                 </li>
+
+                <!-- Add Video Button-->
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('add_video')}}" >Add Video</a>
                 </li>
+
+                <!-- Instagram Link -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/stunts_32/" target="_blank">
+                        <i class="fab fa-instagram instagram-icon"></i>
+                    </a>
+                </li> 
+
             </ul>
         </div>
     </nav>
-    <!-- Where all app.route info goes -->
+
+    <!-- All app.route Info Goes Here -->
+    
     <div class="container">
     {% block content %} {% endblock %}
-    </div>      
+    </div>
+
+    <!-- SCRIPTS -->
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>

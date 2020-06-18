@@ -60,15 +60,13 @@ def mix():
 @app.route('/about')
 @app.route('/')
 def about():
-    return render_template("about.html",
-    videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+    return render_template("about.html", videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
 
 
 # To add video
 @app.route('/add_video')
 def add_video():
-    return render_template('addvideo.html', 
-        brands=mongo.db.brand_names.find())
+    return render_template('addvideo.html', brands=mongo.db.brand_names.find())
 
 
 # to insert video onto page

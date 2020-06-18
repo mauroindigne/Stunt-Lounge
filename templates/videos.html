@@ -1,23 +1,42 @@
 {% extends 'base.html' %} {% block content %}
-<!-- Area for all videos to be placed, to manage location quickly for mobile devices -->
+
 <div class="video-content">
-<!-- Loops and displays each video added to database in its own video block -->
-{% for video in videos %}
-    <div class="video-block">
-        <div class="video-header">
-            <div class="title">
-                {{ video.video_title }}
+
+<!-- All Videos Load Here -->
+
+    {% for video in videos %}
+
+        <!-- Video Block -->
+
+        <div class="video-block">
+            <div class="video-header">
+
+                <!-- Video Title -->
+
+                <div class="title">
+                    {{ video.video_title }}
+                </div>
+
+
+                <div class="edit_icon">
+                    <a href="{{url_for('edit_video', video_id=video._id)}}" class="material-icons">edit</a>
+                    <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
+                </div>
+
             </div>
-            <div class="edit_icon">
-                <a href="{{url_for('edit_video', video_id=video._id)}}" class="material-icons">edit</a>
-                <a href="{{url_for('delete_video', video_id=video._id)}}" class="material-icons">delete_forever</a>
-            </div>
-        </div>
+                
+            <!-- Enbeded Youtube Video -->
+
             <iframe class="video" src="https://www.youtube.com/embed/{{video.video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video_brand">
-            <strong>{{ video.brand }}</strong> - {{ video.model }}
+            
+            <!-- Video Brand/Model Info-->
+
+            <div class="video_brand">
+                <strong>{{ video.brand }}</strong> - {{ video.model }}
+            </div>
+            
         </div>
-    </div>
-{% endfor %}
+    {% endfor %}
 </div>
+
 {% endblock %}

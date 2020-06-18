@@ -1,14 +1,16 @@
 {% extends 'base.html' %} {% block content %}
 
+<!-- 404 Error Display -->
+
 <div class="row">
     <div class="col error404">
         <h3>(Error 404)</h3>
         <p>Sorry, Looks like the page you're looking for doesn't exist...</p>
+
+        <!-- Redirect to Home -->
+
         <a  class="btn btn-danger" href="{{url_for('home')}}" >Return Home</a>
     </div>
 </div>
         
-
-
-
 {% endblock %}

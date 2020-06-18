@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
 
 body {
-  background: url("../images/background.jpg") no-repeat bottom right fixed;
-  height: 100vh;
-  width: 100vw;
-  background-size: 100%;
-  margin-top: 0;
-  font-family:"Oswald", sans-serif;
-  background-color: #F9F9F9;
+    background: url("../images/background.jpg") no-repeat bottom right fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    margin-top: 0;
+    font-family:"Oswald", sans-serif;
+    background-color: #F9F9F9;
 }
+
+/*------- About Page -------*/
 
 .jumbotron {
     background-color: #a2a2a2f0;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 8%;
     border-radius: 10px;
     padding: 5%;
 }
@@ -35,6 +37,7 @@ body {
     text-align: center;
     background-color: #a2a2a2f0;
 }
+
 
 /*----------------------------Navbar----------------- */
 
@@ -72,19 +75,23 @@ body {
     background-color: #F9F9F9;
 }
 
+.instagram-icon {
+    color: red;
+}
+
 /*----------------------------Video Container----------------- */
 
 .video-block {
-  background-color: rgba(48, 48, 48, 0.96);
-  padding: 1%;
-  width: 30%;
-  margin: 1.5%;
-  position:relative;
-  float:left;
-  height: 33%;
-  border-radius: 10px;
-  color: white;
-  text-transform: capitalize;
+    background-color: rgba(48, 48, 48, 0.96);
+    padding: 1%;
+    width: 30%;
+    margin: 1.5%;
+    position:relative;
+    float:left;
+    height: 33%;
+    border-radius: 10px;
+    color: white;
+    text-transform: capitalize;
 }
 
 .video-content {
@@ -107,11 +114,11 @@ body {
 }
 
 .edit_icon {
-        float: right;
-        text-decoration: none;
-        padding-top: 2%;
-        padding-bottom: 4%;
-        font-size: 10px;
+    float: right;
+    text-decoration: none;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 10px;
 }
 
 .material-icons {
@@ -174,22 +181,23 @@ body {
 @media screen and (max-width: 1200px) {
 
     .video-block {
-  background-color: rgba(48, 48, 48, 0.96);
-  padding: 1%;
-  width: 45%;
-  margin: 1.5%;
-  position:relative;
-  float:left;
-  height: 33%;
-  border-radius: 10px;
-  color: white;
-  text-transform: capitalize;
+        background-color: rgba(48, 48, 48, 0.96);
+        padding: 1%;
+        width: 45%;
+        margin: 1.5%;
+        position:relative;
+        float:left;
+        height: 33%;
+        border-radius: 10px;
+        color: white;
+        text-transform: capitalize;
     }
     .video-content {
-    margin-top: 15%;
+        margin-top: 15%;
     }
+
     .addvideo {
-    margin-top: 17%;
+        margin-top: 17%;
     }
 
     .error404 {
@@ -203,17 +211,18 @@ body {
 
 @media screen and (max-width: 900px) {
      .video-block {
-  background-color: rgba(48, 48, 48, 0.96);
-  padding: 1%;
-  width: 46%;
-  margin: 1.5%;
-  position:relative;
-  float:left;
-  height: 33%;
-  border-radius: 10px;
-  color: white;
-  text-transform: capitalize;
+        background-color: rgba(48, 48, 48, 0.96);
+        padding: 1%;
+        width: 46%;
+        margin: 1.5%;
+        position:relative;
+        float:left;
+        height: 33%;
+        border-radius: 10px;
+        color: white;
+        text-transform: capitalize;
     }
+
     .brand-name {
         font-size: 29px;
     }
@@ -223,39 +232,39 @@ body {
     }
 
     .video-content {
-    margin-top: 15%;
+        margin-top: 15%;
     }
 
     .form-group {
-    text-align: left;
+        text-align: left;
+    }
+
+    .jumbotron {
+        margin-top: 28%;
+    }
+
+    .addvideo {
+        margin-top: 15%;
+    }
+
 }
-
-.jumbotron {
-    margin-top: 28%;
-
-}
-
-.addvideo {
-    margin-top: 15%;
-}
-
-
 /*----------------------------Mobile screen----------------- */
 
 
 @media screen and (max-width: 750px) {
      .video-block {
-  background-color: rgba(48, 48, 48, 0.96);
-  padding: 1%;
-  width: 90%;
-  margin: 1.5%;
-  position:relative;
-  float:left;
-  height: 33%;
-  border-radius: 10px;
-  color: white;
-  text-transform: capitalize;
+        background-color: rgba(48, 48, 48, 0.96);
+        padding: 1%;
+        width: 90%;
+        margin: 1.5%;
+        position:relative;
+        float:left;
+        height: 33%;
+        border-radius: 10px;
+        color: white;
+        text-transform: capitalize;
     }
+
     .brand-name {
         font-size: 29px;
     }
@@ -266,28 +275,29 @@ body {
     }
 
     .video-content {
-    margin-top: 20%;
+        margin-top: 20%;
     }
 
     .form-group {
-    text-align: left;
-}
+        text-align: left;
+    }
 
-.jumbotron {
-    margin-top: 28%;
+    .jumbotron {
+        margin-top: 28%;
+    }
 
-}
+    .addvideo {
+        margin-top: 25%;
+    }
 
-.addvideo {
-    margin-top: 25%;
-}
+    .catagory-title {
+        font-size: 60px
+    }
 
-.catagory-title {
-    font-size: 60px
-}
+    .video-block {
+        margin-left: 4.5%;
+    }
 
-.video-block {
-    margin-left: 4.5%;
 }
 
 /*----------------------------Iphone 5/SE screen----------------- */
@@ -298,15 +308,17 @@ body {
     .brand-name {
         font-size: 25px;
     }
+
      .video-content {
-    margin-top: 25%;
+        margin-top: 25%;
     }
+
     .addvideo {
-    margin-top: 29%;
+        margin-top: 29%;
     }
     
     .title {
     font-size: 16px;
+    }
     
-}
 }
