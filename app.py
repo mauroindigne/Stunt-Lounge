@@ -1,27 +1,18 @@
 import os
-import pymongo
 from flask import Flask, render_template, redirect, request, url_for, abort
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
-
-if os.path.exists('env.py'):
-    import env
-
-
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'stunt_lounge'
-app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
-# password is not hidden, (having issues with env.py file)
-print(os.environ.get("MONGO_URI"))
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kincomoro5@cluster0-eyd41.mongodb.net/stunt_lounge?retryWrites=true&w=majority')
+
 mongo = PyMongo(app)
 
-
-# render home screen
+#render home screen
 @app.route('/home')
 def home():
     return render_template("videos.html", videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
-
 
 # Redirect for 404 issue
 @app.errorhandler(404)
