@@ -4,6 +4,8 @@ Stunt Lounge is a website database that stores youtube embedded videos and more 
 
 Stunt lounge is a free to use database of stunt videos that uses the CRUD functionality. You can add your favorite stunt videos from youtube to this database by clicking the “Add Video” button then adding the last 11 characters of your URL from youtube and giving it a title and selecting which motorbike is featured in this video. Then the videos will be displayed in an easy to view embedded video blocks that flows well with whatever device you are viewing it on. These videos can also be categorized by Brand name by clicking on the “Search by Brand” button this helps narrow down the videos and help the user find the video they want. 
 
+- (Link) https://stunt-lounge.herokuapp.com/
+
  
 ## UX
 
@@ -55,13 +57,18 @@ area, the specific data that was clicked is pulled from the database and put on 
 
 ## Technologies Used
 
-- [HTML] - to create the framework of my website.
-- [CSS] - to design the look of the website and colors.
-- [Javascript] - for bootstrap
-- [python] - to change the layout of the website using base.html
+- [HTML](https://en.wikipedia.org/wiki/HTML) 
+    - to create the framework of my website.
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - to design the look of the website and colors.
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    - for bootstrap
+- [python](https://www.python.org/) 
+    - to change the layout of the website using base.html
 - [Font-awsome](http://fontawesome.com/)
-- [fonts.googleapis] (https://fonts.google.com/)
-- [MongoDB] - to store all the data 
+- [fonts.googleapis](https://fonts.google.com/)
+- [MongoDB](https://www.mongodb.com/)
+    - to store all the data 
 
 ## Testing
 
@@ -89,4 +96,14 @@ This site is hosted using Heroku pages, deployed directly from the master branch
 
 ### Content
 
-- The background image is my own.
+
+
+### Media
+
+- The Photo is my own
+
+- Videos come from Youtube(https://www.youtube.com/)
+
+### Acknowledgments
+
+- I was inspired to make this website because of how i spend lots of time watching these video, i wanted a place to store them.
