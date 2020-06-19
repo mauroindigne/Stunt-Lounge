@@ -1,14 +1,19 @@
 import os
+import pymongo
 from flask import Flask, render_template, redirect, request, url_for, abort
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 
+if os.path.exists('env.py'):
+    import env
+
+
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'stunt_lounge'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kincomoro55@cluster0-eyd41.mongodb.net/stunt_lounge?retryWrites=true&w=majority')
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 # password is not hidden, (having issues with env.py file)
-
+print(os.environ.get("MONGO_URI"))
 mongo = PyMongo(app)
 
 
