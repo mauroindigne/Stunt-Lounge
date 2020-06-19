@@ -25,7 +25,7 @@ My main goal was to create a simple website for stunt riders or bikers to view a
 - As a user, I want to have a simple to play video format so i don't have to open a new tab to view videos.
 
 
-The wireframes are found inside the wireframe [directory](../wireframes/), here you will find my mockup designs that i created on google slides, for the home, about and “search by brand” pages.
+The wireframes are found inside the wireframe [directory](../WireFrames/), here you will find my mockup designs that i created on google slides, for the home, about and “search by brand” pages.
 
 ## Features
  
