@@ -12,7 +12,7 @@ Stunt lounge is a free to use database of stunt videos that uses the CRUD functi
 My main goal was to create a simple website for stunt riders or bikers to view and add youtube videos that they enjoy and want to share with the world, while having a clean minimalistic modern design that was easy for users to navigate. With this in mind I started with a simple clean navbar. This included a logo with the website's name that could be clicked to send the user back to the home page. Next came the layout of the videos, I added a fair amount of breathing space to the sides of the home page for the desktop view (limiting the videos to 3 columns) slowly switching to 2 for smaller devices and then finally 1 column for mobile devices. This keeps the website clean and from reshaping the look of the website. Next I added the ability to search for videos by the brand of the bike. This will categories the videos by the brand of motor bike that users have selected while adding videos to the page. 
 
 
-- As a user, i want to save stunt videos , so i can view them easily.
+- As a user, i want to save stunt videos , so i can get them again easily.
 
 - As a user, I want to be able to sort videos by the brand of the bike, so that I can find videos for a specific brand of motorbike.
 
@@ -53,7 +53,7 @@ area, the specific data that was clicked is pulled from the database and put on 
 
 ### Features Left to Implement
 
-- Auto Url - I really wanted the user to be able paste any URL from youtube into the form and for the code to change this into a /embedded/ link every time. This is because currently the user has to manually add the last 11 characters from the url to allow the website to work. In the future I will study RegEx more to get an understanding to be able to implement this feature so that it can read the url and replace whatever url comes before those 11 characters with the embedded form. This will smooth out the UX and lead to an overall higher quality website.
+- Auto Url - I wanted the user to be able paste any URL from youtube into the form and for the code to change this into a /embedded/ link every time. This is because currently the user has to manually add the last 11 characters from the url to allow the website to work. In the future I will study RegEx more to get an understanding to be able to implement this feature so that it can read the url and replace whatever url comes before those 11 characters with the embedded form. This will smooth out the UX and lead to an overall higher quality website.
 
 ## Technologies Used
 
@@ -62,11 +62,13 @@ area, the specific data that was clicked is pulled from the database and put on 
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     - to design the look of the website and colors.
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-    - for bootstrap
+    - for getting bootstrap navbar
 - [python](https://www.python.org/) 
     - to change the layout of the website using base.html
 - [Font-awsome](http://fontawesome.com/)
+    - to add some nice fonts
 - [fonts.googleapis](https://fonts.google.com/)
+    - add some nice text to my page
 - [MongoDB](https://www.mongodb.com/)
     - to store all the data 
 
@@ -88,6 +90,12 @@ One quite interesting bug that you may notice is when hovering over the "edit" a
 
 This site is hosted using Heroku pages, deployed directly from the master branch. (https://stunt-lounge.herokuapp.com/)
 
+- Local Deployment:
+ 1. To run the code locally you can go to [Github repository](https://github.com/mauroindigne/Stunt-Lounge).
+ 2. There you can download a a copy/Duplacate file that includes all of the files used to create this website.
+ 3. Then run it as your own! 
+
+
 ## Credits
 
 - Youtube videos
@@ -100,10 +108,10 @@ This site is hosted using Heroku pages, deployed directly from the master branch
 
 ### Media
 
-- The Photo is my own
+- The background photo is my own
 
-- Videos come from Youtube(https://www.youtube.com/)
+- Videos come from [Youtube](https://www.youtube.com/)
 
 ### Acknowledgments
 
-- I was inspired to make this website because of how i spend lots of time watching these video, i wanted a place to store them.
+- I was inspired to make this website because of how I spend lots of time watching these video, i wanted a place to store them.
