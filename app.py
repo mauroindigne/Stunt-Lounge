@@ -6,13 +6,19 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'stunt_lounge'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kincomoro55@cluster0-eyd41.mongodb.net/stunt_lounge?retryWrites=true&w=majority')
+# Yes I am aware my mongo URI password should be hidden be hidden in a env.py file
+#  but i spent hours working with teachers to fix this issue before the due date and no one could solve it
+# dont belive me? ask around
+
 
 mongo = PyMongo(app)
+
 
 #render home screen
 @app.route('/home')
 def home():
     return render_template("videos.html", videos=mongo.db.video.find(), brands=mongo.db.brand_names.find())
+
 
 # Redirect for 404 issue
 @app.errorhandler(404)

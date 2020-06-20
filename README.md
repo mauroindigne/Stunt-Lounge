@@ -1,10 +1,9 @@
-# Stunt Lounge
+# [Stunt-Lounge](https://stunt-lounge.herokuapp.com/)
 
 Stunt Lounge is a website database that stores youtube embedded videos and more information. The reason I decided to create this website was because I am a professional motorbike freestyle stunt rider. I wanted a database where I or others could store videos from youtube based on the motorbike models. This is because people who are new to the stunt riding scene would like to find videos of a motorbike they have or would like to use and this gives them a database built by fellow riders. Originally I would use youtube's “Liked” videos section to save videos I liked. However I wanted a more “Stunt Bike Vibe” and something that would categories which brands I picked, and that is when I created Stunt lounge. 
 
 Stunt lounge is a free to use database of stunt videos that uses the CRUD functionality. You can add your favorite stunt videos from youtube to this database by clicking the “Add Video” button then adding the last 11 characters of your URL from youtube and giving it a title and selecting which motorbike is featured in this video. Then the videos will be displayed in an easy to view embedded video blocks that flows well with whatever device you are viewing it on. These videos can also be categorized by Brand name by clicking on the “Search by Brand” button this helps narrow down the videos and help the user find the video they want. 
 
-- [Website](https://stunt-lounge.herokuapp.com/)
 
  
 ## UX
