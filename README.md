@@ -69,7 +69,7 @@ area, the specific data that was clicked is pulled from the database and put on 
 - [fonts.googleapis](https://fonts.google.com/)
     - add some nice text to my page
 - [MongoDB](https://www.mongodb.com/)
-    - to store all the data [image here](../static/images/Mongodb.png)
+    - to store all the data [image here](static/images/Mongodb.png)
 
 ## Testing
 
