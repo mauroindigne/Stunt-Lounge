@@ -6,9 +6,10 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'stunt_lounge'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://Kincomoro5:Kincomoro55@cluster0-eyd41.mongodb.net/stunt_lounge?retryWrites=true&w=majority')
-# Yes I am aware my mongo URI password should be hidden be hidden in a env.py file
-#  but i spent hours working with teachers to fix this issue before the due date and no one could solve it
-# dont belive me? ask around
+# Yes I am aware my mongo URI password should be hidden be
+# hidden in a env.py file but i spent hours working with
+# teachers to fix this issue before the due date and no one could solve it
+# iv deleted my env.py, and gitignore due to this issue
 
 
 mongo = PyMongo(app)
