@@ -69,7 +69,7 @@ area, the specific data that was clicked is pulled from the database and put on 
 - [fonts.googleapis](https://fonts.google.com/)
     - add some nice text to my page
 - [MongoDB](https://www.mongodb.com/)
-    - to store all the data 
+    - to store all the data [image here](../static/images/Mongodb.png)
 
 ## Testing
 
@@ -87,7 +87,7 @@ One quite interesting bug that you may notice is when hovering over the "edit" a
 
 ## Deployment
 
-This site is hosted using Heroku pages, deployed directly from the master branch. (https://stunt-lounge.herokuapp.com/)
+This site is hosted using [Heroku](https://stunt-lounge.herokuapp.com/) pages, deployed directly from the master branch. 
 
 - Local Deployment:
  1. To run the code locally you can go to [Github repository](https://github.com/mauroindigne/Stunt-Lounge).
@@ -100,9 +100,6 @@ This site is hosted using Heroku pages, deployed directly from the master branch
 - Youtube videos
 
 - Bootstrap Navbar
-
-### Content
-
 
 
 ### Media
